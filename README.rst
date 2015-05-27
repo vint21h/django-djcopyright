@@ -15,12 +15,12 @@ Installation
 
 Configuration
 -------------
-Add ``'djcopyright'`` to ``settings.INSTALLED_APPS``.
+Add ``"djcopyright"`` to ``settings.INSTALLED_APPS``.
 
     INSTALLED_APPS = (
         ...,
 
-        'djcopyright',
+        "djcopyright",
 
         ...,
 
@@ -32,23 +32,23 @@ Djcopyright settings
 ``DJCOPYRIGHT_START_YEAR``
     Contains year to start show copyright from. Defaults to ``1970``.
 
-``'DJCOPYRIGHT_FORMAT_STRING``
-    Contains format string to show copyright. Defaults to ``u'{start_year} - {current_year}'``.
+``DJCOPYRIGHT_FORMAT_STRING``
+    Contains format string to show copyright. Defaults to ``u"{start_year} - {current_year}"``.
 
-``'DJCOPYRIGHT_SHOW_CURRENT_YEAR``
+``DJCOPYRIGHT_SHOW_CURRENT_YEAR``
     Show current year in copyright string. Defaults to ``True``.
 
-``'DJCOPYRIGHT_SHOW_START_YEAR``
+``DJCOPYRIGHT_SHOW_START_YEAR``
     Show start year in copyright string. Defaults to ``True``.
 
 Usage
 -----
-If you want always have ``COPYRIGHT_YEARS`` variable in templates context, just add ``'djcopyright.context_processors.djcopyright_years'`` to ``settings.TEMPLATE_CONTEXT_PROCESSORS``
+If you want always have ``COPYRIGHT_YEARS`` variable in templates context, just add ``"djcopyright.context_processors.djcopyright_years"`` to ``settings.TEMPLATE_CONTEXT_PROCESSORS``
 
     TEMPLATE_CONTEXT_PROCESSORS = (
         ...,
 
-        'djcopyright.context_processors.djcopyright_years',
+        "djcopyright.context_processors.djcopyright_years",
 
         ...,
 

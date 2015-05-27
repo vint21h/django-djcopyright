@@ -8,7 +8,7 @@ from datetime import date
 
 from djcopyright.settings import START_YEAR, FORMAT_STRING, SHOW_CURRENT_YEAR, SHOW_START_YEAR
 
-__all__ = ['get_copyright', ]
+__all__ = ["get_copyright", ]
 
 
 def get_copyright():

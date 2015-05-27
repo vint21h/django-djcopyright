@@ -7,7 +7,7 @@ from __future__ import unicode_literals
 
 from djcopyright.utils import get_copyright
 
-__all__ = ['djcopyright_years', ]
+__all__ = ["djcopyright_years", ]
 
 
 def djcopyright_years():
@@ -16,5 +16,5 @@ def djcopyright_years():
     """
 
     return {
-        'COPYRIGHT_YEARS': get_copyright(),
+        "COPYRIGHT_YEARS": get_copyright(),
     }

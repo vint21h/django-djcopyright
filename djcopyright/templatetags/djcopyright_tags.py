@@ -14,7 +14,7 @@ __all__ = ["djcopyright_years", ]
 register = template.Library()
 
 
-@register.assignment_tag(takes_context=True)
+@register.assignment_tag()
 def djcopyright_years():
     """
     Formatted copyright years string templatetag.

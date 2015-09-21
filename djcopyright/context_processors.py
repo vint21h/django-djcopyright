@@ -10,7 +10,7 @@ from djcopyright.utils import get_copyright
 __all__ = ["djcopyright_years", ]
 
 
-def djcopyright_years():
+def djcopyright_years(request):
     """
     Return formatted copyright years string named as 'COPYRIGHT_YEARS' to context.
     """

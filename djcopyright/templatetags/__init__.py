@@ -5,4 +5,5 @@
 
 from __future__ import unicode_literals
 
-__all__ = ["djcopyright_tags", ]
+
+__all__ = []

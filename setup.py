@@ -4,12 +4,14 @@
 # django-djcopyright
 # setup.py
 
-from setuptools import setup, find_packages
+from setuptools import (
+    setup,
+    find_packages,
+)
 
 # metadata
-VERSION = (0, 2, 3)
+VERSION = (0, 3, 0)
 __version__ = ".".join(map(str, VERSION))
-
 setup(
     name="django-djcopyright",
     version=__version__,
@@ -19,7 +21,7 @@ setup(
     author_email="vint21h@vint21h.pp.ua",
     description="Django reusable app to show pretty formatted copyright years",
     license="GPLv3 or later",
-    url="https://github.com/vint21h/django-djcopyright",
+    url="https://github.com/vint21h/django-djcopyright/",
     download_url="https://github.com/vint21h/django-djcopyright/archive/{version}.tar.gz".format(version= __version__),
     zip_safe=False,
     include_package_data=True,
@@ -35,5 +37,7 @@ setup(
         "Framework :: Django :: 1.6",
         "Framework :: Django :: 1.7",
         "Framework :: Django :: 1.8",
+        "Framework :: Django :: 1.9",
+        "Framework :: Django :: 1.10",
     ]
 )

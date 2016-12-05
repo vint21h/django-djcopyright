@@ -7,10 +7,13 @@ from __future__ import unicode_literals
 
 from django.apps import AppConfig
 
-__all__ = ["CopyrightConfig", ]
+
+__all__ = [
+    "Config",
+]
 
 
-class CopyrightConfig(AppConfig):
+class Config(AppConfig):
 
     name = "djcopyright"
     verbose_name = "Django copyright"

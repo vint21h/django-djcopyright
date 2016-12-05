@@ -6,14 +6,23 @@
 from __future__ import unicode_literals
 from datetime import date
 
-from djcopyright.settings import START_YEAR, FORMAT_STRING, SHOW_CURRENT_YEAR, SHOW_START_YEAR
+from djcopyright.settings import (
+    START_YEAR,
+    FORMAT_STRING,
+    SHOW_CURRENT_YEAR,
+    SHOW_START_YEAR,
+)
 
-__all__ = ["get_copyright", ]
+__all__ = [
+    "get_copyright",
+]
 
 
 def get_copyright():
     """
     Return formatted copyright years string.
+    Returns:
+        string: formatted copyright years string.
     """
 
     current_year = date.today().year

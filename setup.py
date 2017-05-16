@@ -10,7 +10,7 @@ from setuptools import (
 )
 
 # metadata
-VERSION = (0, 3, 0)
+VERSION = (0, 3, 1)
 __version__ = ".".join(map(str, VERSION))
 setup(
     name="django-djcopyright",
@@ -22,7 +22,7 @@ setup(
     description="Django reusable app to show pretty formatted copyright years",
     license="GPLv3 or later",
     url="https://github.com/vint21h/django-djcopyright/",
-    download_url="https://github.com/vint21h/django-djcopyright/archive/{version}.tar.gz".format(version= __version__),
+    download_url="https://github.com/vint21h/django-djcopyright/archive/{version}.tar.gz".format(version=__version__),
     zip_safe=False,
     include_package_data=True,
     classifiers=[
@@ -39,5 +39,6 @@ setup(
         "Framework :: Django :: 1.8",
         "Framework :: Django :: 1.9",
         "Framework :: Django :: 1.10",
+        "Framework :: Django :: 1.11",
     ]
 )

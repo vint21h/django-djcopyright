@@ -1,6 +1,7 @@
 .. django-djcopyright
 .. README.rst
 
+
 A django-djcopyright documentation
 ==================================
 

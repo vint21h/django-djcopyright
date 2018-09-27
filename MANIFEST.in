@@ -1,6 +1,7 @@
 # django-djcopyright
 # MANIFEST.in
 
+
 include README.rst
 include COPYING
 include AUTHORS

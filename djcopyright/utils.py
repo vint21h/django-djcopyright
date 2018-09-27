@@ -3,6 +3,7 @@
 # django-djcopyright
 # djcopyright/utils.py
 
+
 from __future__ import unicode_literals
 from datetime import date
 
@@ -13,6 +14,7 @@ from djcopyright.settings import (
     SHOW_START_YEAR,
 )
 
+
 __all__ = [
     "get_copyright",
 ]
@@ -21,8 +23,9 @@ __all__ = [
 def get_copyright():
     """
     Return formatted copyright years string.
+
     Returns:
-        string: formatted copyright years string.
+        str: formatted copyright years string.
     """
 
     current_year = date.today().year

@@ -1,6 +1,7 @@
 # django-djcopyright
 # .gitignore
 
+
 .*.swp
 *.pyc
 *.log

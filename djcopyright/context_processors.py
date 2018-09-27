@@ -3,6 +3,7 @@
 # django-djcopyright
 # djcopyright/context_processors.py
 
+
 from __future__ import unicode_literals
 
 from djcopyright.utils import get_copyright

@@ -7,6 +7,7 @@
 import pathlib
 import sys
 from typing import Dict, List, Union  # pylint: disable=W0611
+import datetime
 
 
 # black magic to use imports from library code
@@ -49,11 +50,15 @@ NOSE_ARGS = [
     "--with-coverage",
     "--cover-inclusive",
     "--cover-erase",
-    "--cover-package=read_only_admin",
+    "--cover-package=djcopyright",
     "--logging-clear-handlers",
 ]  # type: List[str]
 
 # configure urls
 ROOT_URLCONF = "djcopyright.urls"  # type: str
 
-# djcopyright settings
+# django copyright settings
+DJCOPYRIGHT_START_YEAR = datetime.date.today().year
+DJCOPYRIGHT_SHOW_CURRENT_YEAR = True
+DJCOPYRIGHT_SHOW_START_YEAR = True
+DJCOPYRIGHT_FORMAT_STRING = "{start_year} - {current_year}"

@@ -48,9 +48,10 @@ def get_copyright() -> Union[int, str, None]:
 
     elif (
         settings.DJCOPYRIGHT_START_YEAR
-        and settings.DJCOPYRIGHT_SHOW_START_YEAR > current_year  # noqa: W503
+        and settings.DJCOPYRIGHT_SHOW_START_YEAR  # noqa: W503
+        and settings.DJCOPYRIGHT_START_YEAR > current_year  # noqa: W503
     ):
 
-        return settings.DJCOPYRIGHT_START_YEAR
+        return current_year
 
     return None

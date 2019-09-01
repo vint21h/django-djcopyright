@@ -13,9 +13,9 @@ from django.conf import settings
 __all__ = ["settings"]  # type: List[str]
 
 
-class DjangoReadOnlyAdminAppConf(AppConf):
+class DjangoDjcopyrightAppConf(AppConf):
     """
-    Django read only admin settings.
+    Django djcopyright settings.
     """
 
     START_YEAR = getattr(settings, "DJCOPYRIGHT_START_YEAR", 1970)  # type: int

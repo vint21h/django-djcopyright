@@ -5,6 +5,8 @@
 A django-djcopyright documentation
 ==================================
 
+|Travis|_ |Coverage|_ |Codacy|_ |Requires|_ |pypi-license|_ |pypi-version|_ |pypi-python-version|_ |pypi-django-version|_ |pypi-format|_ |pypi-wheel|_ |pypi-status|_
+
     *django-djcopyright is a django reusable application to show pretty formatted copyright years*
 
 .. contents::
@@ -16,17 +18,19 @@ Installation
 
 Configuration
 -------------
-Add ``"djcopyright"`` to ``settings.INSTALLED_APPS``.
+* Add ``"djcopyright"`` to ``settings.INSTALLED_APPS``.
 
 .. code-block:: python
+
+    # settings.py
 
     INSTALLED_APPS += (
         "djcopyright",
     )
 
 
-Settings
---------
+django-djcopyright settings
+---------------------------
 ``DJCOPYRIGHT_START_YEAR``
     Contains year to start show copyright from. Defaults to ``1970``.
 
@@ -41,20 +45,22 @@ Settings
 
 Usage
 -----
-If you want always have ``COPYRIGHT_YEARS`` variable in templates context, just add ``"djcopyright.context_processors.djcopyright_years"`` to ``settings.TEMPLATE_CONTEXT_PROCESSORS``
+If you want always have ``"COPYRIGHT_YEARS"`` variable in templates context, just add ``"djcopyright.context_processors.djcopyright_years"`` to ``settings.TEMPLATE_CONTEXT_PROCESSORS``
 
 .. code-block:: python
+
+    # settings.py
 
     TEMPLATE_CONTEXT_PROCESSORS += (
         "djcopyright.context_processors.djcopyright_years",
     )
 
 
-Else you can use ``djcopyright_years`` assignment templatetag which can be loaded from ``djcopyright_tags``.
-
-For example:
+Else you can use ``djcopyright_years`` templatetag which can be loaded from ``djcopyright_tags``.
 
 .. code-block:: django
+
+    {# footer.html #}
 
     {% load djcopyright_tags %}
 
@@ -74,3 +80,27 @@ Contacts
 **Author**: Alexei Andrushievich <vint21h@vint21h.pp.ua>
 
 For other authors list see AUTHORS file.
+
+
+.. |Travis| image:: https://travis-ci.org/vint21h/django-djcopyright.svg?branch=master
+.. |Coverage| image:: https://api.codacy.com/project/badge/Coverage/20867c616b944421bc6793dcaf9d58ff
+.. |Codacy| image:: https://api.codacy.com/project/badge/Grade/20867c616b944421bc6793dcaf9d58ff
+.. |Requires| image:: https://requires.io/github/vint21h/django-djcopyright/requirements.svg?branch=master
+.. |pypi-license| image:: https://img.shields.io/pypi/l/django-djcopyright
+.. |pypi-version| image:: https://img.shields.io/pypi/v/django-djcopyright
+.. |pypi-django-version| image:: https://img.shields.io/pypi/djversions/django-djcopyright
+.. |pypi-python-version| image:: https://img.shields.io/pypi/pyversions/django-djcopyright
+.. |pypi-format| image:: https://img.shields.io/pypi/format/django-djcopyright
+.. |pypi-wheel| image:: https://img.shields.io/pypi/wheel/django-djcopyright
+.. |pypi-status| image:: https://img.shields.io/pypi/status/django-djcopyright
+.. _Travis: https://travis-ci.org/vint21h/django-djcopyright/
+.. _Coverage: https://www.codacy.com/app/vint21h/django-djcopyright
+.. _Codacy: https://www.codacy.com/app/vint21h/django-djcopyright
+.. _Requires: https://requires.io/github/vint21h/django-djcopyright/requirements/?branch=master
+.. _pypi-license: https://pypi.org/project/django-djcopyright/
+.. _pypi-version: https://pypi.org/project/django-djcopyright/
+.. _pypi-django-version: https://pypi.org/project/django-djcopyright/
+.. _pypi-python-version: https://pypi.org/project/django-djcopyright/
+.. _pypi-format: https://pypi.org/project/django-djcopyright/
+.. _pypi-wheel: https://pypi.org/project/django-djcopyright/
+.. _pypi-status: https://pypi.org/project/django-djcopyright/

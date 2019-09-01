@@ -11,9 +11,7 @@ from django import template
 from djcopyright.utils import get_copyright
 
 
-__all__ = [
-    "djcopyright_years",
-]
+__all__ = ["djcopyright_years"]
 
 
 register = template.Library()

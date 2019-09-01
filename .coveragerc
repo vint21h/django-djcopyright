@@ -1,0 +1,19 @@
+# django-djcopyright
+# .coveragerc
+
+
+[run]
+branch = True
+source = djcopyright
+omit =
+    */__init__.py
+   djcopyright/apps.py
+
+[report]
+omit =
+    */__init__.py
+    djcopyright/apps.py
+exclude_lines =
+    pragma: no cover
+
+[xml]

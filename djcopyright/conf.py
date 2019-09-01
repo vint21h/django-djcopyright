@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# django-read-only-admin
+# django-djcopyright
 # djcopyright/conf.py
 
 

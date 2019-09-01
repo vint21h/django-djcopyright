@@ -4,7 +4,7 @@
 # djcopyright/templatetags/djcopyright_tags.py
 
 
-from typing import List, Union  # pylint: disable=W0611
+from typing import List  # pylint: disable=W0611
 
 from django import template
 
@@ -18,12 +18,12 @@ register = template.Library()
 
 
 @register.simple_tag()
-def djcopyright_years() -> Union[int, str, None]:
+def djcopyright_years() -> str:
     """
     Format copyright years string templatetag.
 
     :return: formatted copyright years string.
-    :rtype: Union[int, str, None]
+    :rtype: str.
     """
 
     return get_copyright()

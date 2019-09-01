@@ -4,7 +4,7 @@
 # djcopyright/utils.py
 
 
-from typing import List, Union  # pylint: disable=W0611
+from typing import List  # pylint: disable=W0611
 
 from django.utils import timezone
 
@@ -14,27 +14,28 @@ from djcopyright.conf import settings
 __all__ = ["get_copyright"]  # type: List[str]
 
 
-def get_copyright() -> Union[int, str, None]:
+def get_copyright() -> str:
     """
     Format copyright years string.
 
     :return: formatted copyright years string.
-    :rtype: Union[int, str, None]
+    :rtype: str.
     """
 
     current_year = timezone.now().year  # type: int
+    copy = ""
 
     if settings.DJCOPYRIGHT_START_YEAR == current_year:
 
-        return current_year
+        copy = str(current_year)
 
     elif not settings.DJCOPYRIGHT_SHOW_START_YEAR:
 
-        return current_year
+        copy = str(current_year)
 
     elif not settings.DJCOPYRIGHT_SHOW_CURRENT_YEAR:
 
-        return settings.DJCOPYRIGHT_START_YEAR
+        copy = str(settings.DJCOPYRIGHT_START_YEAR)
 
     elif (
         settings.DJCOPYRIGHT_SHOW_CURRENT_YEAR
@@ -52,6 +53,6 @@ def get_copyright() -> Union[int, str, None]:
         and settings.DJCOPYRIGHT_START_YEAR > current_year  # noqa: W503
     ):
 
-        return current_year
+        copy = str(current_year)
 
-    return None
+    return copy

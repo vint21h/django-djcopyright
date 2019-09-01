@@ -33,7 +33,7 @@ class GetCopyrightUtilTest(TestCase):
         :rtype: None.
         """
 
-        self.assertEqual(first=get_copyright(), second=YEAR)
+        self.assertEqual(first=get_copyright(), second=str(YEAR))
 
     @override_settings(DJCOPYRIGHT_SHOW_START_YEAR=False, DJCOPYRIGHT_START_YEAR=1970)
     def test_get_copyright__without_showing_start_year(self) -> None:
@@ -44,7 +44,7 @@ class GetCopyrightUtilTest(TestCase):
         :rtype: None.
         """
 
-        self.assertEqual(first=get_copyright(), second=YEAR)
+        self.assertEqual(first=get_copyright(), second=str(YEAR))
 
     @override_settings(DJCOPYRIGHT_SHOW_CURRENT_YEAR=False, DJCOPYRIGHT_START_YEAR=1970)
     def test_get_copyright__without_showing_current_year(self) -> None:
@@ -55,7 +55,7 @@ class GetCopyrightUtilTest(TestCase):
         :rtype: None.
         """
 
-        self.assertEqual(first=get_copyright(), second=1970)
+        self.assertEqual(first=get_copyright(), second="1970")
 
     @override_settings(DJCOPYRIGHT_START_YEAR=1970)
     def test_get_copyright__show_all(self) -> None:
@@ -91,4 +91,4 @@ class GetCopyrightUtilTest(TestCase):
         :rtype: None.
         """
 
-        self.assertEqual(first=get_copyright(), second=YEAR)
+        self.assertEqual(first=get_copyright(), second=str(YEAR))

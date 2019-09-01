@@ -6,9 +6,9 @@
 
 from typing import List  # pylint: disable=W0611
 
-from django.utils import timezone
 from django.test import TestCase
 from django.test.utils import override_settings
+from django.utils import timezone
 
 from djcopyright.utils import get_copyright
 
@@ -68,7 +68,10 @@ class GetCopyrightUtilTest(TestCase):
 
         self.assertEqual(first=get_copyright(), second=f"1970 - {YEAR}")
 
-    @override_settings(DJCOPYRIGHT_START_YEAR=1970, DJCOPYRIGHT_FORMAT_STRING="{start_year} — {current_year}")
+    @override_settings(
+        DJCOPYRIGHT_START_YEAR=1970,
+        DJCOPYRIGHT_FORMAT_STRING="{start_year} — {current_year}",
+    )
     def test_get_copyright__show_all__using_custom_format(self) -> None:
         """
         Util must return start and current year using custom format string.

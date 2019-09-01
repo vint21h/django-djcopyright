@@ -4,10 +4,10 @@
 # djcopyright/__init__.py
 
 
-from __future__ import unicode_literals
+from typing import List  # pylint: disable=W0611
 
 
-__all__ = ["default_app_config"]
+__all__ = ["default_app_config"]  # type: List[str]
 
 
-default_app_config = "djcopyright.apps.Config"
+default_app_config = "djcopyright.apps.DjangoDjcopyrightConfig"

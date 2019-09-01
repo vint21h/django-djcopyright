@@ -20,7 +20,7 @@ YEAR = timezone.now().today().year  # type: int
 
 class DjcopyrightYearsTemplatetagTest(TestCase):
     """
-    Get copyright templatetag tests.
+    Djcopyright years templatetag tests.
     """
 
     def test_djcopyright_years(self) -> None:

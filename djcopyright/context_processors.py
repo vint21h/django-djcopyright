@@ -20,7 +20,7 @@ def djcopyright_years(request: HttpRequest) -> Dict[str, str]:
 
     :param request: django HTTP request object.
     :type request: django.http.request.HttpRequest.
-    :return: formatted copyright years string named as "COPYRIGHT_YEARS" to context.
+    :return: formatted copyright years string named as "COPYRIGHT_YEARS".
     :rtype: Dict[str, str].
     """
 

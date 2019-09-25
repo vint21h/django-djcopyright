@@ -7,14 +7,14 @@ A django-djcopyright documentation
 
 |Travis|_ |Coverage|_ |Codacy|_ |Requires|_ |pypi-license|_ |pypi-version|_ |pypi-python-version|_ |pypi-django-version|_ |pypi-format|_ |pypi-wheel|_ |pypi-status|_
 
-    *django-djcopyright is a django reusable application to show pretty formatted copyright years*
+    *django-djcopyright is a Django reusable application to show pretty formatted copyright years*
 
 .. contents::
 
 Installation
 ------------
 * Obtain your copy of source code from the git repository: ``git clone https://github.com/vint21h/django-djcopyright.git``. Or download the latest release from https://github.com/vint21h/django-djcopyright/tags/.
-* Run ``python ./setup.py install`` from repository source tree or unpacked archive. Or use pip: ``pip install django-djcopyright``.
+* Run ``python ./setup.py install`` from the repository source tree or unpacked archive. Or use pip: ``pip install django-djcopyright``.
 
 Configuration
 -------------

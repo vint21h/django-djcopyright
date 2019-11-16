@@ -24,13 +24,13 @@ Configuration
 
     # settings.py
 
-    INSTALLED_APPS += (
+    INSTALLED_APPS += [
         "djcopyright",
-    )
+    ]
 
 
-django-djcopyright settings
----------------------------
+Settings
+--------
 ``DJCOPYRIGHT_START_YEAR``
     Contains year to start show copyright from. Defaults to ``1970``.
 
@@ -51,9 +51,9 @@ If you want always have ``"COPYRIGHT_YEARS"`` variable in templates context, jus
 
     # settings.py
 
-    TEMPLATE_CONTEXT_PROCESSORS += (
+    TEMPLATE_CONTEXT_PROCESSORS += [
         "djcopyright.context_processors.djcopyright_years",
-    )
+    ]
 
 
 Else you can use ``djcopyright_years`` templatetag which can be loaded from ``djcopyright_tags``.
@@ -83,16 +83,27 @@ For other authors list see AUTHORS file.
 
 
 .. |Travis| image:: https://travis-ci.org/vint21h/django-djcopyright.svg?branch=master
+    :alt: Travis
 .. |Coverage| image:: https://api.codacy.com/project/badge/Coverage/20867c616b944421bc6793dcaf9d58ff
+    :alt: Coverage
 .. |Codacy| image:: https://api.codacy.com/project/badge/Grade/20867c616b944421bc6793dcaf9d58ff
+    :alt: Codacy
 .. |Requires| image:: https://requires.io/github/vint21h/django-djcopyright/requirements.svg?branch=master
+    :alt: Requires
 .. |pypi-license| image:: https://img.shields.io/pypi/l/django-djcopyright
+    :alt: License
 .. |pypi-version| image:: https://img.shields.io/pypi/v/django-djcopyright
+    :alt: Version
 .. |pypi-django-version| image:: https://img.shields.io/pypi/djversions/django-djcopyright
+    :alt: Supported Django version
 .. |pypi-python-version| image:: https://img.shields.io/pypi/pyversions/django-djcopyright
+    :alt: Supported Python version
 .. |pypi-format| image:: https://img.shields.io/pypi/format/django-djcopyright
+    :alt: Package format
 .. |pypi-wheel| image:: https://img.shields.io/pypi/wheel/django-djcopyright
+    :alt: Python wheel support
 .. |pypi-status| image:: https://img.shields.io/pypi/status/django-djcopyright
+    :alt: Package status
 .. _Travis: https://travis-ci.org/vint21h/django-djcopyright/
 .. _Coverage: https://www.codacy.com/app/vint21h/django-djcopyright
 .. _Codacy: https://www.codacy.com/app/vint21h/django-djcopyright

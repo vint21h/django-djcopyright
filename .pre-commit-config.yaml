@@ -47,7 +47,7 @@ repos:
       name: bandit
       stages: [commit]
       language: system
-      entry: bandit -r djcopyright tests
+      entry: bandit -r djcopyright tests --ini=.bandit
       types: [python]
       pass_filenames: false
     - id: dodgy

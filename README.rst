@@ -5,7 +5,7 @@
 A django-djcopyright documentation
 ==================================
 
-|Travis|_ |Coverage|_ |Codacy|_ |Requires|_ |pypi-license|_ |pypi-version|_ |pypi-python-version|_ |pypi-django-version|_ |pypi-format|_ |pypi-wheel|_ |pypi-status|_
+|Travis|_ |Coverage|_ |Requires|_ |pypi-license|_ |pypi-version|_ |pypi-python-version|_ |pypi-django-version|_ |pypi-format|_ |pypi-wheel|_ |pypi-status|_
 
     *django-djcopyright is a Django reusable application to show pretty formatted copyright years*
 
@@ -86,8 +86,6 @@ For other authors list see AUTHORS file.
     :alt: Travis
 .. |Coverage| image:: https://api.codacy.com/project/badge/Coverage/20867c616b944421bc6793dcaf9d58ff
     :alt: Coverage
-.. |Codacy| image:: https://api.codacy.com/project/badge/Grade/20867c616b944421bc6793dcaf9d58ff
-    :alt: Codacy
 .. |Requires| image:: https://requires.io/github/vint21h/django-djcopyright/requirements.svg?branch=master
     :alt: Requires
 .. |pypi-license| image:: https://img.shields.io/pypi/l/django-djcopyright
@@ -106,7 +104,6 @@ For other authors list see AUTHORS file.
     :alt: Package status
 .. _Travis: https://travis-ci.org/vint21h/django-djcopyright/
 .. _Coverage: https://www.codacy.com/app/vint21h/django-djcopyright
-.. _Codacy: https://www.codacy.com/app/vint21h/django-djcopyright
 .. _Requires: https://requires.io/github/vint21h/django-djcopyright/requirements/?branch=master
 .. _pypi-license: https://pypi.org/project/django-djcopyright/
 .. _pypi-version: https://pypi.org/project/django-djcopyright/

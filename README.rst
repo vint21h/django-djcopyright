@@ -13,8 +13,8 @@ A django-djcopyright documentation
 
 Installation
 ------------
-* Obtain your copy of source code from the git repository: ``git clone https://github.com/vint21h/django-djcopyright.git``. Or download the latest release from https://github.com/vint21h/django-djcopyright/tags/.
-* Run ``python ./setup.py install`` from the repository source tree or unpacked archive. Or use pip: ``pip install django-djcopyright``.
+* Obtain your copy of source code from the git repository: ``$ git clone https://github.com/vint21h/django-djcopyright.git``. Or download the latest release from https://github.com/vint21h/django-djcopyright/tags/.
+* Run ``$ python ./setup.py install`` from the repository source tree or unpacked archive. Or use pip: ``$ pip install django-djcopyright``.
 
 Configuration
 -------------
@@ -27,7 +27,6 @@ Configuration
     INSTALLED_APPS += [
         "djcopyright",
     ]
-
 
 Settings
 --------
@@ -66,7 +65,6 @@ Else you can use ``djcopyright_years`` templatetag which can be loaded from ``dj
 
     {% djcopyright_years as COPYRIGHT_YEARS %}
     {{ COPYRIGHT_YEARS }}
-
 
 Licensing
 ---------

@@ -30,5 +30,8 @@ class DjangoDjcopyrightAppConf(AppConf):
     )  # type: bool
 
     class Meta:
+        """
+        Config settings.
+        """
 
         prefix = "djcopyright"  # type: str

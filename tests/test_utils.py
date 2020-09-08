@@ -28,9 +28,6 @@ class GetCopyrightUtilTest(TestCase):
     def test_get_copyright__start_year_equal_current(self) -> None:
         """
         Util must return start year from settings if it equal current year.
-
-        :return: nothing.
-        :rtype: None.
         """
 
         self.assertEqual(first=get_copyright(), second=str(YEAR))
@@ -39,9 +36,6 @@ class GetCopyrightUtilTest(TestCase):
     def test_get_copyright__without_showing_start_year(self) -> None:
         """
         Util must return only current year.
-
-        :return: nothing.
-        :rtype: None.
         """
 
         self.assertEqual(first=get_copyright(), second=str(YEAR))
@@ -50,9 +44,6 @@ class GetCopyrightUtilTest(TestCase):
     def test_get_copyright__without_showing_current_year(self) -> None:
         """
         Util must return only start year.
-
-        :return: nothing.
-        :rtype: None.
         """
 
         self.assertEqual(first=get_copyright(), second="1970")
@@ -61,9 +52,6 @@ class GetCopyrightUtilTest(TestCase):
     def test_get_copyright__show_all(self) -> None:
         """
         Util must return start and current year.
-
-        :return: nothing.
-        :rtype: None.
         """
 
         self.assertEqual(first=get_copyright(), second=f"1970 - {YEAR}")
@@ -75,9 +63,6 @@ class GetCopyrightUtilTest(TestCase):
     def test_get_copyright__show_all__using_custom_format(self) -> None:
         """
         Util must return start and current year using custom format string.
-
-        :return: nothing.
-        :rtype: None.
         """
 
         self.assertEqual(first=get_copyright(), second=f"1970 — {YEAR}")
@@ -86,9 +71,6 @@ class GetCopyrightUtilTest(TestCase):
     def test_get_copyright__start_year_greater_than_current(self) -> None:
         """
         Util must return current year.
-
-        :return: nothing.
-        :rtype: None.
         """
 
         self.assertEqual(first=get_copyright(), second=str(YEAR))

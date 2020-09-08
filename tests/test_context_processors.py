@@ -27,9 +27,6 @@ class DjcopyrightYearsContextProcessorTest(TestCase):
     def test_djcopyright_years(self) -> None:
         """
         Must return formatted new context variable with copyright.
-
-        :return: nothing.
-        :rtype: None.
         """
 
         request = HttpRequest()  # type: HttpRequest

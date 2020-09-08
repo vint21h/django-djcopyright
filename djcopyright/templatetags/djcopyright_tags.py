@@ -22,8 +22,8 @@ def djcopyright_years() -> str:
     """
     Format copyright years string templatetag.
 
-    :return: formatted copyright years string.
-    :rtype: str.
+    :return: formatted copyright years string
+    :rtype: str
     """
 
     return get_copyright()

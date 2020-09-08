@@ -26,9 +26,6 @@ class DjcopyrightYearsTemplatetagTest(TestCase):
     def test_djcopyright_years(self) -> None:
         """
         Must return formatted copyright tag.
-
-        :return: nothing.
-        :rtype: None.
         """
 
         result = djcopyright_years()  # type: str

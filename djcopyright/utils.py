@@ -18,8 +18,8 @@ def get_copyright() -> str:
     """
     Format copyright years string.
 
-    :return: formatted copyright years string.
-    :rtype: str.
+    :return: formatted copyright years string
+    :rtype: str
     """
 
     current_year = timezone.now().year  # type: int

@@ -5,7 +5,7 @@
 A django-djcopyright documentation
 ==================================
 
-|Travis|_ |Coveralls|_ |Requires|_ |pypi-license|_ |pypi-version|_ |pypi-python-version|_ |pypi-django-version|_ |pypi-format|_ |pypi-wheel|_ |pypi-status|_
+|GitHub|_ |Coveralls|_ |Requires|_ |pypi-license|_ |pypi-version|_ |pypi-python-version|_ |pypi-django-version|_ |pypi-format|_ |pypi-wheel|_ |pypi-status|_
 
     *django-djcopyright is a Django reusable application to show pretty formatted copyright years*
 
@@ -80,8 +80,8 @@ Contacts
 For other authors list see AUTHORS file.
 
 
-.. |Travis| image:: https://travis-ci.com/vint21h/django-djcopyright.svg?branch=master
-    :alt: Travis
+.. |GitHub| image:: https://github.com/vint21h/django-djcopyright/workflows/build/badge.svg
+    :alt: GitHub
 .. |Coveralls| image:: https://coveralls.io/repos/github/vint21h/django-djcopyright/badge.svg?branch=master
     :alt: Coveralls
 .. |Requires| image:: https://requires.io/github/vint21h/django-djcopyright/requirements.svg?branch=master
@@ -100,7 +100,7 @@ For other authors list see AUTHORS file.
     :alt: Python wheel support
 .. |pypi-status| image:: https://img.shields.io/pypi/status/django-djcopyright
     :alt: Package status
-.. _Travis: https://travis-ci.com/vint21h/django-djcopyright/
+.. _GitHub: https://github.com/vint21h/django-djcopyright/actions/
 .. _Coveralls: https://coveralls.io/github/vint21h/django-djcopyright?branch=master
 .. _Requires: https://requires.io/github/vint21h/django-djcopyright/requirements/?branch=master
 .. _pypi-license: https://pypi.org/project/django-djcopyright/

@@ -2,7 +2,6 @@
 # MANIFEST.in
 
 
-prune .github*
 prune tests*
 recursive-include djcopyright *.po
 recursive-include djcopyright *.mo

@@ -38,24 +38,7 @@ TEMPLATES = [
 ]  # type: List[Dict[str, Union[str, List[str], bool, Dict[str, str]]]]
 
 
-# add testing related apps
-INSTALLED_APPS = ["django_nose", "djcopyright"]  # type: List[str]
-
-# add nose test runner
-TEST_RUNNER = "django_nose.NoseTestSuiteRunner"  # type: str
-
-# configure nose test runner
-NOSE_ARGS = [
-    "--rednose",
-    "--force-color",
-    "--with-timer",
-    "--with-doctest",
-    "--with-coverage",
-    "--cover-inclusive",
-    "--cover-erase",
-    "--cover-package=djcopyright",
-    "--logging-clear-handlers",
-]  # type: List[str]
+INSTALLED_APPS = ["djcopyright"]  # type: List[str]
 
 # configure urls
 ROOT_URLCONF = "djcopyright.urls"  # type: str

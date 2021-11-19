@@ -4,14 +4,14 @@
 # djcopyright/context_processors.py
 
 
-from typing import Dict, List  # pylint: disable=W0611
+from typing import Dict, List
 
 from django.http import HttpRequest
 
 from djcopyright.utils import get_copyright
 
 
-__all__ = ["djcopyright_years"]  # type: List[str]
+__all__: List[str] = ["djcopyright_years"]
 
 
 def djcopyright_years(request: HttpRequest) -> Dict[str, str]:
@@ -23,5 +23,4 @@ def djcopyright_years(request: HttpRequest) -> Dict[str, str]:
     :return: formatted copyright years string named as "COPYRIGHT_YEARS"
     :rtype: Dict[str, str]
     """
-
     return {"COPYRIGHT_YEARS": get_copyright()}

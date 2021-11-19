@@ -4,19 +4,17 @@
 # djcopyright/apps.py
 
 
-from typing import List  # pylint: disable=W0611
+from typing import List
 
 from django.apps import AppConfig
 from django.utils.translation import gettext_lazy as _
 
 
-__all__ = ["DjangoDjcopyrightConfig"]  # type: List[str]
+__all__: List[str] = ["DjangoDjcopyrightConfig"]
 
 
 class DjangoDjcopyrightConfig(AppConfig):
-    """
-    Application config.
-    """
+    """Application config."""
 
-    name = "djcopyright"  # type: str
-    verbose_name = _("Django copyright")  # type: str
+    name: str = "djcopyright"
+    verbose_name: str = _("Django copyright")

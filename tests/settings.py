@@ -5,46 +5,49 @@
 
 
 import sys
-import random
 import pathlib
 import datetime
-from typing import Dict, List, Union  # pylint: disable=W0611
+from random import SystemRandom
+from typing import Dict, List, Union
 
 
 # black magic to use imports from library code
-sys.path.insert(0, str(pathlib.Path(__file__).absolute().parent.parent.parent))
+path = pathlib.Path(__file__).absolute()
+project = path.parent.parent.parent
+sys.path.insert(0, str(project))
+
 
 # secret key
-SECRET_KEY = "".join(
+SECRET_KEY: str = "".join(
     [
-        random.choice("abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)")  # nosec
+        SystemRandom().choice("abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)")
         for i in range(50)
     ]
-)  # type: str
+)
 
 # configure databases
-DATABASES = {
+DATABASES: Dict[str, Dict[str, str]] = {
     "default": {"ENGINE": "django.db.backends.sqlite3", "NAME": ":memory:"}
-}  # type: Dict[str, Dict[str, str]]
+}
 
 # configure templates
-TEMPLATES = [
+TEMPLATES: List[Dict[str, Union[str, List[str], bool, Dict[str, str]]]] = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [],
         "APP_DIRS": True,
         "OPTIONS": {},
     }
-]  # type: List[Dict[str, Union[str, List[str], bool, Dict[str, str]]]]
+]
 
 
-INSTALLED_APPS = ["djcopyright"]  # type: List[str]
+INSTALLED_APPS: List[str] = ["djcopyright"]
 
 # configure urls
-ROOT_URLCONF = "djcopyright.urls"  # type: str
+ROOT_URLCONF: str = "djcopyright.urls"
 
 # django copyright settings
-DJCOPYRIGHT_START_YEAR = datetime.date.today().year
-DJCOPYRIGHT_SHOW_CURRENT_YEAR = True
-DJCOPYRIGHT_SHOW_START_YEAR = True
-DJCOPYRIGHT_FORMAT_STRING = "{start_year} - {current_year}"
+DJCOPYRIGHT_START_YEAR: int = datetime.date.today().year
+DJCOPYRIGHT_SHOW_CURRENT_YEAR: bool = True
+DJCOPYRIGHT_SHOW_START_YEAR: int = True
+DJCOPYRIGHT_FORMAT_STRING: str = "{start_year} - {current_year}"  # noqa: FS003

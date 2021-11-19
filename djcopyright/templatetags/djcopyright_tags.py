@@ -4,14 +4,14 @@
 # djcopyright/templatetags/djcopyright_tags.py
 
 
-from typing import List  # pylint: disable=W0611
+from typing import List
 
 from django import template
 
 from djcopyright.utils import get_copyright
 
 
-__all__ = ["djcopyright_years"]  # type: List[str]
+__all__: List[str] = ["djcopyright_years"]
 
 
 register = template.Library()
@@ -25,5 +25,4 @@ def djcopyright_years() -> str:
     :return: formatted copyright years string
     :rtype: str
     """
-
     return get_copyright()
